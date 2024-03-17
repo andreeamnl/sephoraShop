@@ -21,4 +21,4 @@ The footer includes navigation links to various sections of the landing page, co
 
 ## Visit website
 
-https://andreeamnl.github.io/web_lab_2/
+https://andreeamnl.github.io/sephoraShop/
