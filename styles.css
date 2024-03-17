@@ -1,573 +1,69 @@
 
-html, body {
-    overflow-x: hidden;
-  }
-  
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
-  
-  
-    .mascot {
-      position: fixed;
-      top: 85%;
-      right:0px;
-      width: 15%;
-      opacity: 0;
-      height: auto;
-      animation: fadeIn 0.5s ease-in-out forwards;
-      animation-delay: 3s;
-      
-    }
-  
-    .mascot p{
-      margin: 5%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: small;
-    }
-    .hoverable{
-      opacity: 0;
-    }
-    .mascot img {
-      width: 90%;
-      height: auto;
-      animation: dance 2s ease-in-out  infinite;
-    }
-    .mascot:hover .hoverable {
-      opacity: 0.6;
-    }
-    
-    
-    @keyframes fadeIn {
-      from {
-        bottom:0px;
-        opacity: 0;
-      }
-      to {
-        bottom:20%;
-        opacity: 0.6;
-      }
-    }
-    
-    @keyframes dance {
-      0%{
-        transform: rotate(0deg);
-      }
-      50%{
-        transform: rotate(8deg);
-      }
-      100%{
-        transform: rotate(0deg);
-      }
-      
-    }
-  
-    
-  img{
-    max-width: 100%;
-    height: auto;
-  }
-  
-  footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .container .wrapper .community,.container .wrapper .shopicon, .container .wrapper .basket, .no-mobile {
-    display: none;
-  }
-  
-  .cat {
-    display: flex;
-    justify-content: space-between; /* Align items in two columns */
-    padding: 15px 15px 20px 25px;
-  }
-  
-  .cat .contents {
-    display: flex;
-    align-items: center; /* Center items vertically */
-  }
-  .cat .text{
-    width:70%;
-  }
-  
-  .cat p{
-    margin-top:3%;
-  }
-  
-  .cat a{
-    color: #333;
-    font-style: italic;
-  }
-  
-  .cat button {
-    background-color: #333;
-    border: none;
-    border-radius: 15px;
-    padding: 10px 20px; /* Adjust padding as needed */
-    color: #ccc;
-    font-size: 16px; /* Adjust font size as needed */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-  }
-  
-  .cat button:hover {
-    background-color: #555; /* Change background color on hover */
-  }
-  
-  .section1 .text p{
-    font-size: large;
-  }
-  
-  .section1 .text{
-    margin: 2%;
-  }
-  
-  .section2 .text {
-  
-    margin: 5%;
-    position: relative;
-  }
-  
-  .section2 .text p:not(.title) {
-    display: none;
-  }
-  .footer-section ul {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .footer-content {
-    display: flex;
-    flex-direction: column;
-    border-top: 2px solid #ccc; /* Add top border */
-    border-bottom: 2px solid #ccc; /* Add top border */
-    padding: 5%;
-    
-  }
-  
-  .footer-column{
-    margin-top: 5%;
-    border:#ccc 2px;
-  
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 5%;
-  }
-  
-  .footer p,
-  .footer h3,
-  .footer a,
-  .footer .social-links ul li, .footer-bottom{
-    margin-top:2.5%;
-    margin-bottom: 5%;
-  }
-  
-  .section4 .container1{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  
-  .section4 img, .section4 .text {
-    margin: 5%;
-  }
-  
-  .section4 .search {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-  }
-  
-  
-  .section5 .text{
-    display: flex;
-      justify-content: center;
-      width: 100%;
-      margin: 2.5%;
-  }
-  
-  .apps a{
-    /* Ensure the images are displayed inline */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .app-img {
-    /* Set the width of the images to 30% of the screen width */
-    width: 40%;
-    height: 20%;
-    margin: 10px;
-  }
-  }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-  
-  
-    .mobile{
-      display: none;
-    }
-    .mascot {
-      position: fixed;
-      right: 20px;
-      opacity: 0;
-      width: 7%;
-      height: 0%;
-      animation: fadeIn 0.5s ease-in-out forwards;
-      animation-delay: 3s;
-    }
-    .hoverable{
-      opacity: 0;
-    }
-    .mascot img {
-      width: 100%;
-      height: auto;
-      animation: dance 2s ease-in-out  infinite;
-    }
-    .mascot:hover .hoverable {
-      opacity: 1;
-    }
-    
-    
-    @keyframes fadeIn {
-      from {
-        bottom:0px;
-        opacity: 0;
-      }
-      to {
-        bottom:20%;
-        opacity: 0.6;
-      }
-    }
-    
-    @keyframes dance {
-      0%{
-        transform: rotate(0deg);
-      }
-      50%{
-        transform: rotate(8deg);
-      }
-      100%{
-        transform: rotate(0deg);
-      }
-      
-    }
-  }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-  
-  
-  
-  }
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-  
-  }
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {}
-  
-  
-  
-  .logo img{
-    display: flex;
-    align-items: center;
-    padding-left: 16px;
-    margin-left: -16px;
-    padding-right: 16px;
-    margin-right: -16px;
-    height: 54px;
-  }
-  
-  .container svg {
-      height: 24px;
-      width: 24px;
-      padding: 20px;
-  }
-  
-  .signin img {
-    height: 24px;
-    width: 24px;
-    padding: 20px;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between; 
-    font-size: 80%;
-  }
-  
-  .wrapper{
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .text {
-    margin-left: 10px;
-  }
-  
-  .search {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    width: 30%;
-  
-  }
-  
-  .search form {
-    margin-bottom: 10px;
-  }
-  
-  .search input[type="text"] {
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 100%;
-  }
-  
-  
-  
-  .nav-elems{
-    display:flex;
-    justify-content: space-around;
-    flex-direction: row;
-    font-size: 80%;
-  }
-  
-  .cat {
-    display: flex;
-    justify-content: center; /* Align items in two columns */
-    align-items: center;
-    padding: 20px 15px 0px 25px;
-  }
-  
-  .cat .contents {
-    display: flex;
-    align-items: center; /* Center items vertically */
-  }
-  .cat .text{
-    width:70%;
-  }
-  
-  .cat p{
-    margin-top:3%;
-  }
-  
-  .cat a{
-    color: #333;
-    font-style: italic;
-  }
-  
-  .cat button {
-    background-color: #333;
-    border: none;
-    border-radius: 15px;
-    padding: 10px 20px; /* Adjust padding as needed */
-    color: #ccc;
-    font-size: 16px; /* Adjust font size as needed */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-  }
-  
-  .cat button:hover {
-    background-color: #555; /* Change background color on hover */
-  }
-  
-  
-  .section1 .container1{
-    display: flex;
-    background-color: rgb(160, 191, 234);
-    max-width: 100%;
-    height: auto;
-    margin-right: 12px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .section1 .container1 img{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .section1 .text{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    white-space: normal;
-    font-size: xx-large;
-  }
-  
-  .containers1{
-    display:flex;
-    justify-content: space-around;
-    flex-direction: row;
-  }
-  main > .section1{
-    margin-top: 0;
-  }
-  
-   main > .section2, main >.section3, main >.section4{
-    margin-top: 30px;
-  }
-  
-  .main-text{
-    font-size: xx-large;
-    padding: 10px;
-  }
-  
-  .section2 .container1,
-  .section2 .container2,
-  .section2 .container3 {
-    width: 500px;
-    height: 370px;
-    margin-right: 8px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .section2 .container1 img, .section2 .container2 img, .section2 .container3 img {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 83%;
-    object-fit: cover;
-  }
-  
-  .section2 .container1{
-    background-color: pink;
-  }
-  
-  .section2 .container2{
-    background-color: rgb(157, 71, 157);
-  }
-  
-  .section2 .container3{
-    background-color: beige;
-  }
-  
-  .section3 .container1{
-    display: flex;
-    justify-content: space-between;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #775959;
-  }
-  
-  .section3 .container1 img{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .section3 .container1 .text{
-    display: flex;
-    justify-content:center;
-    align-items: center; 
-    font-size:xx-large;
-  
-  }
-  
-  
-  .section4 , .section4 img{
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  
-  }
-  
-  
-  .section4 .search, .section4 .text{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 2.5%;
-  }
-  
-  .footer-content {
-    color: #ccc;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .footer-section {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  .footer-section h3 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 5px;
-  }
-  
-  .footer-section ul li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .footer-section ul li a:hover {
-    color: #666;
-  }
-  
-  a {
-    color: #ccc;
-    text-decoration: none; 
-  }
-  
-  a:hover {
-    color: black;
-  }
-  
-  a:active {
-    color: gray;
-  }
-  
-  body {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  header {
-      background-color: white;
-      color: #333;
-      padding: 20px;
-  }
-  
-  nav {
-      background-color: #333;
-      color: white;
-      padding: 10px;
-  }
-  
-  main {
-      padding: 20px;
-  }
-  
-  footer {
-    
-      background-color: #333;
-      padding: 20px;
-  }
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+nav{
+  padding: 10px;
+}
+
+.logo img{
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  margin-left: -16px;
+  padding-right: 16px;
+  margin-right: -16px;
+  height: 54px;
+}
+.search form {
+   margin-bottom: 10px;
+}
+
+.search input[type="text"] {
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+}
+#calltoaction{
+  padding-top: 3%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 30vw;
+  object-fit: cover;
+}
+
+
+.card p{
+  font-weight: bold;
+}
+
+
+a{
+  color: #333;
+}
+
+section:not(#cards) {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding:3%;
+
+}
+
+#location{
+  .search{
+      padding-top:2%;
+  }
+}
+
+/* Custom CSS to change text color to #ccc */
+.page-footer {
+  color: #ccc;
+}
+
+.page-footer a {
+  color: #8b8585; /* Change color of anchor links */
+}
