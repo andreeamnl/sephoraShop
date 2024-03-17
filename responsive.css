@@ -1,0 +1,149 @@
+@media (max-width: 768px) {
+    header{
+        margin-top: 1%;
+
+    }
+    #cards{
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+    .mascot {
+        position: fixed;
+        top: 85%;
+        right: 0px;
+        width: 15%;
+        opacity: 0;
+        height: auto;
+        animation: fadeIn 0.5s ease-in-out forwards;
+        animation-delay: 3s;
+        z-index: 1000; /* Adjust this value as needed to ensure it's above other elements */
+    }
+    
+    
+      .mascot p{
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+      }
+      .hoverable{
+        opacity: 0;
+      }
+      .mascot img {
+        width: 98%;
+        height: auto;
+        animation: dance 2s ease-in-out  infinite;
+      }
+      .mascot:hover .hoverable {
+        opacity: 0.6;
+      }
+      
+      
+      @keyframes fadeIn {
+        from {
+          bottom:0px;
+          opacity: 0;
+        }
+        to {
+          bottom:20%;
+          opacity: 0.6;
+        }
+      }
+      
+      @keyframes dance {
+        0%{
+          transform: rotate(0deg);
+        }
+        50%{
+          transform: rotate(8deg);
+        }
+        100%{
+          transform: rotate(0deg);
+        }
+        
+      }
+    
+
+
+}
+
+
+@media (min-width: 768px) {
+
+    .card {
+        margin-right: 20px; /* Adjust this value as needed */
+   }
+
+    #offers{
+        .card-title{
+            font-size: 15ch;
+        }
+        .card-text{
+            padding-top: 5px;
+            font-size: 7ch;
+        }
+
+    }
+    #tutorials{
+        .card-text{
+            padding-left: 20%;
+            padding-top: 5px;
+            font-size: 5ch;
+        }
+
+    }         
+    .mobile{
+        display: none;
+    }
+    .mascot {
+        position: fixed;
+        right: 20px; /* Or adjust according to your layout */
+        bottom: 30px; /* Raise it up a bit from the bottom */
+        width: 5%; /* Reduce the size as needed */
+        opacity: 0;
+        height: auto; /* Adjust if you're setting a specific height */
+        animation: fadeIn 0.5s ease-in-out forwards;
+        animation-delay: 3s;
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+
+    .hoverable{
+        opacity: 0;
+    }
+    .mascot img {
+        width: 100%;
+        height: auto;
+        animation: dance 2s ease-in-out  infinite;
+    }
+    .mascot:hover .hoverable {
+        opacity: 1;
+    }    
+    @keyframes fadeIn {
+        from {
+        bottom:0px;
+        opacity: 0;
+        }
+        to {
+        bottom:5%;
+        opacity: 0.6;
+        }
+    }
+    
+    @keyframes dance {
+        0%{
+        transform: rotate(0deg);
+        }
+        50%{
+        transform: rotate(8deg);
+        }
+        100%{
+        transform: rotate(0deg);
+        }
+        
+    }
+        
+}
