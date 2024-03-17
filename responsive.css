@@ -8,7 +8,6 @@
             display: flex;
             justify-content: center;
         }
-
     }
     .mascot {
         position: fixed;
@@ -21,7 +20,6 @@
         animation-delay: 3s;
         z-index: 1000; /* Adjust this value as needed to ensure it's above other elements */
     }
-    
     
       .mascot p{
         margin: 5%;
@@ -66,8 +64,6 @@
         }
         
       }
-    
-
 
 }
 
